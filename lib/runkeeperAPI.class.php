@@ -105,6 +105,10 @@ class RunKeeperAPI {
 		}
 	}
 
+	public function readToken () {
+		return $this->access_token;
+	}
+
 	public function setRunkeeperToken ($access_token) {
 		$this->access_token = $access_token;
 	}

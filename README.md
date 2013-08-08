@@ -8,7 +8,7 @@ PHP wrapper for Runkeeper Health Graph API
 
 ## Installation via Composer
 
-Add this to you `composer.json` file, in the require object;
+Add this to your `composer.json` file, in the require object;
 
     "madewithlove/runkeeper": "0.3.*"
 
