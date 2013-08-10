@@ -41,7 +41,7 @@ if ($_GET['code']) {
 		/* Do a "Read" request on "FitnessActivityFeed" interface => return all fields available for this Interface or false if request fails */
 		$rkActivities = $rkAPI->doRunkeeperRequest('FitnessActivityFeed','Read');
 		if ($rkActivities) {
-			print_r($rkUpdateActivities);
+			print_r($rkActivities);
 		}
 		else {
 			echo $rkAPI->api_last_error;
