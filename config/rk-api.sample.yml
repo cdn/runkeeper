@@ -224,6 +224,26 @@ Interfaces:
    nearest_diabetes {name: nearest_diabetes, type: string, editable: false}
    nearest_teammate_diabetes {name: nearest_teammate_diabetes, type: array, editable: false}
 
+ FitnessActivitySummary:
+  Name: FitnessActivitySummary
+  Media_Type: application/vnd.com.runkeeper.FitnessActivitySummary+json
+  Read:
+   Method: GET
+  Fields:
+   uri: {name: uri, type: string, editable: false}
+   userID: {name: userID, type: int, editable: false}
+   type: {name: type, type: string, editable: true, values:['Running', 'Cycling', 'Mountain Biking', 'Walking', 'Hiking', 'Downhill Skiing', 'Cross-Country Skiing', 'Snowboarding', 'Skating', 'Swimming', 'Wheelchair', 'Rowing', 'Elliptical', 'Other']}
+   secondary_type: {name: secondary_type, type:string, editable: true}
+   equipment: {name: equipment, type: string, editable: true, values:['None', 'Treadmill', 'Stationary Bike', 'Elliptical', 'Row Machine']}
+   start_time: {name: start_time, type: datestring, editable: false}
+   total_distance: {name: total_distance, type: float, editable: true}
+   duration: {name: duration, type: float, editable: true}
+   average_heart_rate: {name: average_heart_rate, type: int, editable: true}
+   total_calories: {name: total_calories, type: float, editable: true}
+   climb: {name: climb, type: float, editable: false}
+   notes: {name: notes, type: string, editable: true}
+#
+
  NewFitnessActivity:
   Name: NewFitnessActivity
   Media_Type: application/vnd.com.runkeeper.NewFitnessActivity+json
